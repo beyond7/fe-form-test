@@ -16,7 +16,7 @@ const Button = ({ text, action, customStyle, fit, disabled }: ButtonProps) => {
         'transition duration-700 ease-in-out',
         'hover:bg-sky-500 border-sky-500',
         'text-sky-500 hover:text-white font-medium',
-        fit ? 'w-fit' : 'min-w-8',
+        fit ? 'w-fit mx-0' : 'min-w-8',
         customStyle,
         disabled ? 'bg-sky-200 border-sky-200 hover:bg-sky-200 hover:text-sky-500 cursor-not-allowed' : '',
       )}

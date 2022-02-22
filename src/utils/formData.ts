@@ -12,13 +12,13 @@ export const initializedValue = () => {
         newFormData.fields[i].ffField.text = '';
         break;
       case 'slField':
-        newFormData.fields[i].slField.selection = { index: 0, explanation: '' };
+        newFormData.fields[i].slField.selection = { index: 1, explanation: '' };
         break;
       case 'nestedSlField':
         newFormData.fields[i].nestedSlField.sub_field_selections = [];
         for (let j = 0; j < newFormData.fields[i].nestedSlField.spec.subFieldSpecs.length; j += 1) {
           newFormData.fields[i].nestedSlField.sub_field_selections[j] = {
-            index: 0,
+            index: 1,
             explanation: '',
           };
         }
