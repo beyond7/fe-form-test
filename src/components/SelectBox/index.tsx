@@ -58,6 +58,7 @@ const SelectBox = ({ slOption, value, explanation, onChangeExplanation, onChange
         ref={wrapperRef}
       >
         {slOption.options[value].text}
+        <span className="absolute right-3 top-3">{'▼'}</span>
 
         {showOptions && (
           <div className="absolute -bottom-20 border-t-2 border-sky-500 left-0 w-full z-50">
